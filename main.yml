@@ -6,6 +6,11 @@ steps:
 - name: ''
   uses: prompt
   env:
+    Model:
+      type: enum
+      value: gpt-3.5-turbo
+      sort: 0
+      messages: []
     Messages:
       type: messages
       value: ''
@@ -13,21 +18,22 @@ steps:
       messages:
       - role: system
         content: 'write a blog about: {{text|contextText|copiedText}}'
-    Output:
-      type: bool
-      value: 'true'
-      sort: 3
-      messages: []
     Temperature:
       type: enum
       value: '0.9'
       sort: 1
       messages: []
-    Model:
-      type: enum
-      value: gpt-3.5-turbo
-      sort: 0
+    Output:
+      type: bool
+      value: 'true'
+      sort: 3
       messages: []
 extensionId: enconvo.blog
 logo: ns:blog
 description: Write a blog
+async: false
+shortName: ''
+homePage: https://github.com/ysnows/enconvo.blog
+appCast: 'https://raw.githubusercontent.com/ysnows/enconvo.blog/main/appcast.json'
+shortCut: ''
+minAppVersion: ''

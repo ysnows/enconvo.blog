@@ -1,8 +1,10 @@
 {
-  "author" : "enconvo",
-  "extensionId" : "enconvo.blog",
   "name" : "Blog",
+  "author" : "enconvo",
   "version" : "0.0.1",
+  "extensionId" : "enconvo.blog",
+  "logo" : "ns:blog",
   "description" : "Write a blog",
-  "logo" : "ns:blog"
+  "appCast" : "https://raw.githubusercontent.com/ysnows/enconvo.blog/main/appcast.json",
+  "homePage" : "https:\/\/github.com\/ysnows\/enconvo.blog"
 }
