@@ -1,0 +1,8 @@
+{
+  "author" : "enconvo",
+  "extensionId" : "enconvo.blog",
+  "name" : "Blog",
+  "version" : "0.0.1",
+  "description" : "Write a blog",
+  "logo" : "ns:blog"
+}
