@@ -1,5 +1,5 @@
 name: Blog
-version: 0.0.1
+version: 0.0.2
 author: enconvo
 on: {}
 steps:
@@ -20,20 +20,38 @@ steps:
         content: 'write a blog about: {{text|contextText|copiedText}}'
     Temperature:
       type: enum
-      value: '0.9'
+      value: '1.0'
       sort: 1
-      messages: []
-    Output:
-      type: bool
-      value: 'true'
-      sort: 3
       messages: []
 extensionId: enconvo.blog
 logo: ns:blog
 description: Write a blog
 async: false
-shortName: ''
 homePage: https://github.com/ysnows/enconvo.blog
-appCast: 'https://raw.githubusercontent.com/ysnows/enconvo.blog/main/appcast.json'
-shortCut: ''
-minAppVersion: ''
+appCast: https://raw.githubusercontent.com/ysnows/enconvo.blog/main/appcast.json
+minAppVersion: 1.2.1
+flowType: prompt
+options:
+- title: General
+  items:
+  - identifier: Alias
+    type: text
+    title: Alias
+    defaultValue: ''
+    menuValues: []
+    desc: ''
+    placeholderText: Add alias
+    textWidth: 1.6e+2
+    disable: false
+  - identifier: Hotkey
+    type: hotkey
+    title: Hotkey
+    defaultValue: ''
+    menuValues: []
+    desc: "This shortcut will open an ai conversation window from anywhere in the
+      system\n      . Make sure it is not conflicting with other global shortcuts."
+    placeholderText: Add a hotkey to global start
+    textWidth: 1.6e+2
+    disable: false
+  desc: ''
+sort: 10
